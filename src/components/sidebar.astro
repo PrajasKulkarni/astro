@@ -1,0 +1,75 @@
+---
+const {page_title , page_desc} = Astro.props;
+---
+
+<style>
+  .sidecontent {
+    position: fixed;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: linear-gradient(
+      0deg,
+      rgb(67, 222, 157),
+      rgb(102, 154, 233),
+      rgb(6, 96, 156)
+    );
+    height: 100vh;
+  }
+
+  .sidecontent .sun_img {
+    width: 35%;
+    height: 10%;
+  }
+
+  .sidecontent .event_img {
+    display: flex;
+  }
+
+  .img {
+    width: 70%;
+  }
+
+  .icon {
+    width: 20%;
+    height: 50%;
+  }
+
+  .sidecontent .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 20px;
+  }
+
+  .text-container .text {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .description {
+    margin-block-start: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+</style>
+
+<div class="sidecontent">
+  <div class="sun_img">
+    <img src="/sun.webp" alt="img1" />
+  </div>
+  <div class="event_img">
+    <img src="/Events_image.webp" alt="img2" class="img" />
+    <img src="/icon.webp" alt="img3" class="img icon" />
+  </div>
+  <div class="text-container">
+    <h1 class="text">{page_title}</h1>
+    <p class="description">
+      {page_desc}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+---
+
+---
+<style>
+    .navbar{
+        position:fixed;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        background-color: #0854e87d;
+        backdrop-filter: blur(15px);
+        font-weight: 700;
+        justify-content: space-between;
+        align-items: center;
+        z-index:15;
+        color: white;
+        transition: 0.25ms ease transform;
+    }
+
+    .navbar .logos{
+        display: flex;
+        width: 40%;
+    }
+
+    .navbar .nav-comps{
+        padding: 10px 10px;
+        font-size: 1.25rem;
+        margin: 0px 5px;
+    }
+
+    .navbar .logos .insitutename{
+        text-align: center;
+        font-size: .60rem;
+        font-weight: bold;
+        width: 25%;
+    }
+
+    .navbar .logos .insitutelogo{
+        margin-left: 10px;
+        border-radius: 50px;
+    }
+
+    .nav-btns{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    .nav-btns:hover{
+        background-color: rgb(96, 223, 96);
+    }
+
+</style>
+
+<div class="navbar" id="navbar">
+
+    <div class="nav-comps logos">
+        <div class="insitutename">Indian Institute Of Technology Gandhinagar</div>
+        <div class="insitutelogo"><img src='/iitgn_logo.jpeg' width="50px" height="50px"></div>
+      </div>
+
+  <div class="nav-comps">
+    <button type="button" class="nav-btns">
+        <a href="./Home">Home</a>
+    </button>
+  </div>
+
+  <div class="nav-comps">
+    <button type="button" class="nav-btns">
+        <a href="./Events">Events</a>
+    </button>
+  </div>
+
+  <div class="nav-comps">
+    <button type="button" class="nav-btns">
+        <a href="./Sponsors">Sponsors</a>
+    </button>
+  </div>
+
+  <div class="nav-comps">
+    <button type="button" class="nav-btns">
+        <a href="./Team">Team</a>
+    </button>
+  </div>
+
+  <div class="nav-comps">
+    <button type="button" class="nav-btns">
+        <a href="#">Map</a>
+    </button>
+  </div>
+</div>
+

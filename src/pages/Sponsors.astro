@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SideBar from "../components/sidebar.astro";
+import SponsCard from "../components/sponscard.astro";
+
+import sponsors from "../content/data/sponsors.json";
+---
+
+<style>
+  main {
+    display: flex;
+  }
+
+  .maincontent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    width: 75%;
+    height: 100vh;
+    margin-inline-start: 25%;
+    margin-block-start: 60px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px ;
+    gap: 80px 15px;
+    justify-content: center;
+  }
+
+  .maincontent .text {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px;
+  }
+</style>
+<BaseLayout title="Sponsors | Blithchron'24">
+  <main>
+    <SideBar
+      page_title="SPONSORS"
+      page_desc="Our sponsors are the ones who make this cultural fest possible. We are grateful to them for their support. We would like to thank them for their contribution."
+    />
+
+    <div class="maincontent">
+      <h1 class="text" style="text-align: center;">CURRENT SPONSORS</h1>
+      <div class="container">
+        {sponsors.map((sponsor)=>{
+            return (
+                <SponsCard img = {sponsor.img} name = {sponsor.name} link = {sponsor.link} />
+            );
+        })}
+      </div>
+      <h1 class="text" style="text-align: center;">PREVIOUS SPONSORS</h1>
+    </div>
+  </main>
+</BaseLayout>

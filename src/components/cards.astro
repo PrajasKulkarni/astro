@@ -1,0 +1,77 @@
+---
+const { event_title, img, desc } = Astro.props;
+---
+
+<style>
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .event-title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border: none;
+    border-radius: 50px;
+    background-color: #acddde;
+    margin: 0px 10px;
+  }
+
+  .card-container .img-container {
+    height: 400px;
+    margin: 2px 2px 0px 2px;
+    border-radius: 50px 50px 0px 0px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: inherit;
+  }
+
+  .card-container .btn-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 1.15rem;
+    font-weight: 500;
+    height: 45px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: #d9819c;
+    color: white;
+    transition: all 0.3s;
+    outline: none;
+    border: none;
+  }
+
+  .btn:hover {
+    background-color: rgb(227, 151, 10);
+  }
+</style>
+<div class="container">
+  <div class="card-container">
+    <div class="img-container">
+      <img src={img} alt={desc} />
+    </div>
+
+    <div class="btn-container">
+      <button type="button" class="btn">Register</button>
+      <button type="button" class="btn">Rulebook</button>
+    </div>
+  </div>
+
+  <div class="event-title">{event_title}</div>
+</div>

@@ -1,0 +1,42 @@
+---
+const { img, name, link } = Astro.props;
+---
+
+<style>
+  .card-container {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .card-container:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease transform;
+  }
+
+  .card-container .img-container {
+    height: 70px;
+  }
+
+  .card-container .text-container {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="card-container">
+  <a href={link}>
+    <div class="img-container">
+      <img src={img} alt="My Image" />
+    </div>
+
+    <div class="text-container">
+      <h1>{name}</h1>
+    </div>
+  </a>
+</div>

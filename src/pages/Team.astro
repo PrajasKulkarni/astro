@@ -1,0 +1,56 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SideBar from "../components/sidebar.astro";
+import TeamCard from "../components/TeamCard.astro";
+
+import teamJson from "../content/data/team.json"
+---
+
+<style>
+  main {
+    display: flex;
+  }
+
+  .maincontent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    width: 75%;
+    height: 100vh;
+    margin-inline-start: 25%;
+    margin-block-start: 60px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 80px 100px;
+    justify-content: center;
+  }
+
+  .maincontent .text {
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px;
+  }
+</style>
+
+<BaseLayout title="Team | Blithchron'24">
+  <main>
+    <SideBar
+      page_title=" OUR TEAM"
+      page_desc="We are awesome team always working to make Blithchron better"
+    />
+    <div class="maincontent">
+      <div class="container">
+      {teamJson.map((team) => {
+        return (
+          <TeamCard img = {team.image} name = {team.name} position = {team.pos} phonenumber = {team.phone_no} email = {team.email}/>
+        )
+      })}
+    </div>
+    </div>
+    
+  </main>
+</BaseLayout>

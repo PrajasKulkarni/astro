@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SideBar from '../components/sidebar.astro'
+import Card from "../components/cards.astro";
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
+
+const alleventcards: CollectionEntry<'events'>[] = await getCollection('events');
+---
+
+<style>
+  main {
+    display: flex;
+  }
+
+  .maincontent {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    width: 75%;
+    height: 100vh;
+    margin-inline-start: 25%;
+    margin-block-start: 60px;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    gap: 20px 15px;
+  }
+
+  .maincontent .text{
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 20px;
+    padding: 10px;
+  }
+</style>
+
+<BaseLayout title="Events | Blithcron'24">
+  <main>
+    <SideBar page_tilte = 'EVENTS' page_desc = "Blithchron '24 presents to you these amazing events" />
+    <div class="maincontent">
+      <h1 class="text" style="text-align: center;">UPCOMING EVENTS</h1>
+      <div class="container">
+        {alleventcards.map(events => (
+          <Card event_title = {events.data.title} img ={events.data.image} desc = {events.data.description}/>
+        ) )}
+      </div>
+    </div>
+  </main>
+</BaseLayout>

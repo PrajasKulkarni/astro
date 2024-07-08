@@ -1,0 +1,81 @@
+---
+const {img , name , position , phonenumber , email} = Astro.props;
+---
+
+<style>
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .profile{
+        background-color: white;
+        border-radius: 50%;
+        height: 400px ;
+        width: 200px;
+        overflow:hidden
+    }
+
+    .downlayer1{
+        background-color: black;
+        border-radius: 50%;
+        height: 100px ;
+        width: 250px;
+        z-index: -10;
+        position: relative;
+        top: 40px;
+    }
+
+    .downlayer2{
+        background-color: grey;
+        border-radius: 50%;
+        height: 100px ;
+        width: 250px;
+        z-index: -20;
+        position: relative;
+        top: 20px;
+    }
+    .text-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+        position: relative;
+        top: 30px;
+    }
+
+    .text-container .name{
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+
+    .position{
+        font-weight: 500;
+    }
+
+    .contact{
+        font-weight: 300;
+        font-size: medium;
+    }
+   
+</style>
+
+<div class="card-container">
+    <div class="profile">
+        <img src={img} alt="">
+    </div>
+    <div class="downlayer1"></div>
+    <div class="downlayer2"></div>
+    <div class="text-container">
+        <div class="name">{name}</div>
+        <div class="position">{position}</div>
+        <div class="contact">{phonenumber}</div>
+        <div class="contact">{email}</div>
+
+
+    </div>
+</div>
