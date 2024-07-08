@@ -1,29 +1,59 @@
 
 <style>
-    .container{
-        background: linear-gradient( 0deg,
-      rgb(67, 222, 157),
-      rgb(102, 154, 233),
-      rgb(6, 96, 156));
-       display: flex;
+    .footer-container{
+        background: linear-gradient(#60a3dd, #43dc9f);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
         height: 200px;
-        width: 100vw;
+        margin-inline-start: 25%;
+        width: 75%;
         color: white;
+        /* position: relative;
+        bottom: 0;
+        left: 0; */
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        gap: 50px 0px;
+    }
+
+    .heading{
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .columns{
+        height: 150px;
+        text-align: center;
+    }
+
+    ul li{
+        margin: 5px;
+    }
+
+    .ver{
+        height: 150px;
+        width: 2px;
+        background-color: white;
     }
 </style>
 
-<div class="container">
-    <div class="connection">
+<div class="footer-container">
+    <div class="columns">
         <div class="heading">Connect with us</div>
         <div class="grid">
-            <a href="http://"></a>
-            <a href="http://"></a>
-            <a href="http://"></a>
-            <a href="http://"></a>
+            <a href="">Insta</a>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+            <a href="">Whatsapp</a>
         </div>
     </div>
-
-    <div class="navigate">
+    <div class="ver"></div>
+    <div class="columns">
         <div class="heading">Navigate</div>
         <ul>
             <li><a href="">Home</a></li>
@@ -33,11 +63,12 @@
         </ul>
     </div>
     
-    <div class="our-app">
+    <div class="ver"></div>
+    <div class="columns">
         <div class="heading">Our App</div>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="">Prajas</a></li>
+            <li><a href="">Kulkarni</a></li>
         </ul>
     </div>
 </div>

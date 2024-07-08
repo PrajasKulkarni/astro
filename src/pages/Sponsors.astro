@@ -6,52 +6,25 @@ import SponsCard from "../components/sponscard.astro";
 import sponsors from "../content/data/sponsors.json";
 ---
 
-<style>
-  main {
-    display: flex;
-  }
-
-  .maincontent {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 10px;
-    width: 75%;
-    height: 100vh;
-    margin-inline-start: 25%;
-    margin-block-start: 60px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 250px 250px 250px ;
-    gap: 80px 15px;
-    justify-content: center;
-  }
-
-  .maincontent .text {
-    font-size: 2.5em;
-    font-weight: 600;
-    margin: 20px;
-    padding: 10px;
-  }
-</style>
 <BaseLayout title="Sponsors | Blithchron'24">
-  <main>
+  <main class="flex">
     <SideBar
       page_title="SPONSORS"
       page_desc="Our sponsors are the ones who make this cultural fest possible. We are grateful to them for their support. We would like to thank them for their contribution."
     />
 
-    <div class="maincontent">
-      <h1 class="text" style="text-align: center;">CURRENT SPONSORS</h1>
-      <div class="container">
+    <div class="flex-auto flex-col px-10 w-3/4 h-screen ms-60 mt-10">
+
+      <h1 class="text-4xl font-semibold p-5 m-10 text-center" style="text-align: center;">CURRENT SPONSORS</h1>
+
+      <div class=" mx-10 grid grid-cols-3 gap-x-20 gap-y-20">
         {sponsors.map((sponsor)=>{
             return (
                 <SponsCard img = {sponsor.img} name = {sponsor.name} link = {sponsor.link} />
             );
         })}
       </div>
-      <h1 class="text" style="text-align: center;">PREVIOUS SPONSORS</h1>
+      <h1 class="text-4xl font-semibold p-5 m-10 text-center">PREVIOUS SPONSORS</h1>
     </div>
   </main>
 </BaseLayout>
