@@ -1,79 +1,90 @@
 [
     {
-        "name": "Shrimay Shah",
+        "post": "Events",
+        "name": "Sarah John",
         "pos": "Events Core",
-        "phone_no": "111111111",
+        "phone_no": "(555) 555-0101",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGS9S9EymSgmeq6-Bkz50hvVhTUx8is6Ul3-p3T7TpYmIn4zPp8gpluUXuO7t"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Events",
+        "name": "Michael Lee",
+        "pos": "Events Coordinator",
+        "phone_no": "(222) 222-2222",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwWo9p1V_1COgvbLPsBIYXfIflGzW9pMT0yGB3QhBQHQhwa_oanNFBz8ISoEp-"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Events",
+        "name": "Aisha Patel",
+        "pos": "Pronites and Finance Coordinator",
+        "phone_no": "(707) 707-7777",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDOP2ePS3xyCyVrvMR0Sv-Ui8dP9N8PRHjS0EBJj4PwhjJ5-DI6bTrFcLq572Y"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Design",
+        "name": "David Garcia",
+        "pos": "Design Core",
+        "phone_no": "(800) 123-4567",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJfyh0VCuYr-Rhx6MNbOkGn-0nYvvdIwln7f3uLjyDxe31JLNk2bIHhZ9lHfjt"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Design",
+        "name": "Chloe Bennet",
+        "pos": "Design and Decor Coordinator",
+        "phone_no": "(415) 555-1212",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNhVxbvtIn8N7sgrgGYp0tFdELxS-xlJ7e6elYncIDQGjgBJZ-2j6-lCoYx1G6"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Design",
+        "name": "Liam Robinson",
+        "pos": "Design Coordinator",
+        "phone_no": "(619) 987-6543",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU59ClDAiEHCeBMyTzpqZaiBzLMKAQ4sTbpm79hyndumrCzKGaps5OlJssTuQC"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Public Relations",
+        "name": "Maya Hernendez",
+        "pos": "Public Relation Core",
+        "phone_no": "(310) 222-3344",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTodhiqgH5l-WlPequuDPsPZ7v05LMeg7oMDCnePAC-LvXBQUICSRw_ElnHgWc"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Public Relations",
+        "name": "Ethan Nguyen",
+        "pos": "Sponsorship Coordinator",
+        "phone_no": "(917) 555-5555",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGS9S9EymSgmeq6-Bkz50hvVhTUx8is6Ul3-p3T7TpYmIn4zPp8gpluUXuO7t"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Public Relations",
+        "name": "Olivia Brown",
+        "pos": "Marketing Head",
+        "phone_no": "(404) 404-4040",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGiwVIfptYQf3peUj_aaYdiUt6BqjNiqhoSjBf-Zi1C2wWcnsSujjEg_xqtZif"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Public Relations",
+        "name": "Noah Miller",
+        "pos": "Content Coordinator",
+        "phone_no": "(212) 555-1234",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Knv4JlV1-qXLPXnbK7VE6uymVVKrq1DXk3OGzlh4ZWNG5qMHo2QYuTQ-pZ7y"
     },
     {
-        "name": "Shrimay Shah",
-        "pos": "Events Core",
-        "phone_no": "111111111",
+        "post": "Web Developer",
+        "name": "Sophia Kim",
+        "pos": "Technical Coordinator",
+        "phone_no": "(503) 867-5309",
         "email": "abc@xyz.in",
-        "image": "/iitgn_logo.jpeg"
+        "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRs8FMV-loAiNRjHq2zwQjCr5mFgM_dcFO324UpO8edmSghD--TSe7pOnjkR2SF"
     }
 ]

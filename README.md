@@ -70,3 +70,16 @@ defination of islands
 The general idea of an “Islands” architecture is deceptively simple: render HTML pages on the server, and inject placeholders or slots around highly dynamic regions […] that can then be “hydrated” on the client into small self-contained widgets, reusing their server-rendered initial HTML.
 
 
+<video
+            class="video"
+            crossorigin="anonymous"
+            autoplay
+            controls
+            muted
+            loop
+          >
+            <source
+              src="https://raw.githubusercontent.com/1KPLJ/blith-assets/main/blith-thowback.mp4"
+              type="video/mp4"
+            />
+          </video>

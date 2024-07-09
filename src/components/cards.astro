@@ -3,15 +3,6 @@ const { event_title, img, desc } = Astro.props;
 ---
 
 <style>
-  .container{
-    display: flex;
-    flex-direction: column;
-  }
-  .event-title{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 400;
-  }
   .card-container {
     display: flex;
     flex-direction: column;
@@ -32,11 +23,7 @@ const { event_title, img, desc } = Astro.props;
     justify-content: center;
     align-items: center;
   }
-
-  img {
-    height: inherit;
-  }
-
+  
   .card-container .btn-container {
     height: 100px;
     display: flex;
@@ -61,8 +48,9 @@ const { event_title, img, desc } = Astro.props;
     background-color: rgb(227, 151, 10);
   }
 </style>
-<div class="container">
+<div class="flex flex-col">
   <div class="card-container">
+    
     <div class="img-container">
       <img src={img} alt={desc} />
     </div>
@@ -73,5 +61,5 @@ const { event_title, img, desc } = Astro.props;
     </div>
   </div>
 
-  <div class="event-title">{event_title}</div>
+  <div class="text-center text-4xl font-normal">{event_title}</div>
 </div>

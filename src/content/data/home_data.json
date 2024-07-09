@@ -1,0 +1,30 @@
+[
+    {
+        "Event": "Panache",
+        "FrontImg": "/Panache.png",
+        "EventDesc": "Here’s your chance to grab your needles, threads and spools and create magic for our runaway and put up the fashion show of your lifetime. Get ready fashionista’s for Gujarat’s flagship fashion show - “PANACHE”. We’ll be the one with the red carpet." ,
+        "BackgroundImg": "/events-bg.webp"
+    },
+
+    {
+        "Event": "Synchronize",
+        "FrontImg": "/Sync.png",
+        "EventDesc": "Here’s your chance to grab your needles, threads and spools and create magic for our runaway and put up the fashion show of your lifetime. Get ready fashionista’s for Gujarat’s flagship fashion show - “PANACHE”. We’ll be the one with the red carpet." ,
+        "BackgroundImg":"/events-bg.webp"
+    },
+
+    {
+        "Event": "Antaragnee",
+        "FrontImg": "/Antaragnee.png",
+        "EventDesc": "Here’s your chance to grab your needles, threads and spools and create magic for our runaway and put up the fashion show of your lifetime. Get ready fashionista’s for Gujarat’s flagship fashion show - “PANACHE”. We’ll be the one with the red carpet." ,
+        "BackgroundImg":"/events-bg.webp"
+    },
+
+
+    {
+        "Event": "More Image",
+        "FrontImg": "/BlithMoM.png",
+        "EventDesc": "Here’s your chance to grab your needles, threads and spools and create magic for our runaway and put up the fashion show of your lifetime. Get ready fashionista’s for Gujarat’s flagship fashion show - “PANACHE”. We’ll be the one with the red carpet." ,
+        "BackgroundImg":"/events-bg.webp"
+    }
+]

@@ -2,79 +2,19 @@
 const {img , name , position , phonenumber , email} = Astro.props;
 ---
 
-<style>
-    .card-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 300px;
-    }
-
-    .profile{
-        background-color: white;
-        border-radius: 50%;
-        height: 400px ;
-        width: 200px;
-        overflow:hidden
-    }
-
-    .downlayer1{
-        background-color: black;
-        border-radius: 50%;
-        height: 100px ;
-        width: 250px;
-        z-index: -10;
-        position: relative;
-        top: 40px;
-    }
-
-    .downlayer2{
-        background-color: grey;
-        border-radius: 50%;
-        height: 100px ;
-        width: 250px;
-        z-index: -20;
-        position: relative;
-        top: 20px;
-    }
-    .text-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100px;
-        position: relative;
-        top: 30px;
-    }
-
-    .text-container .name{
-        font-size: 1.15rem;
-        font-weight: 600;
-    }
-
-    .position{
-        font-weight: 500;
-    }
-
-    .contact{
-        font-weight: 300;
-        font-size: medium;
-    }
-   
-</style>
-
-<div class="card-container">
-    <div class="profile">
+<div class="flex justify-center items-center flex-col h-75 cursor-pointer hover:scale-105 transition ease">
+    <div class="bg-white rounded-full h-100 w-50 overflow-hidden">
         <img src={img} alt="">
     </div>
-    <div class="downlayer1"></div>
-    <div class="downlayer2"></div>
-    <div class="text-container">
-        <div class="name">{name}</div>
-        <div class="position">{position}</div>
-        <div class="contact">{phonenumber}</div>
-        <div class="contact">{email}</div>
+    <div class="bg-black rounded-full h-25 w-60 -z-10 relative top-10"></div>
+
+    <div class="bg-slate-400 rounded-full h-25 w-60 -z-20 relative top-5"></div>
+
+    <div class="flex justify-center items-center flex-col h-25 relative top-8">
+        <div class="text-lg font-semibold">{name}</div>
+        <div class="font-medium">{position}</div>
+        <div class="text-sm font-light">{phonenumber}</div>
+        <div class="text-sm font-light">{email}</div>
 
 
     </div>

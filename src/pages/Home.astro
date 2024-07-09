@@ -1,9 +1,57 @@
---- 
-import BaseLayout from '../layouts/BaseLayout.astro';
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import home_data from "../content/data/home_data.json";
 ---
 
-<BaseLayout title = "Blithchron'24">
-	<main>
-        
-    </main>
+<style>
+  .setup {
+    background-image: url("/public/Aerosol.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+  .content-box {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    backdrop-filter: blur(5px);
+  }
+</style>
+
+<BaseLayout title="Blithchron'24 | Home">
+  {
+    home_data.map((data) => (
+      <div class="w-screen h-screen setup">
+        <div class="flex border-2 border-black border-solid w-3/4 h-2/3 px-10 pt-5 content-box">
+          <div class="flex-col w-3/4 h-full mx-5">
+            <div class="text-2xl h-1/4 font-bold">Hello</div>
+            <div class="text-lg font-medium h-1/2 font-normal my-5">
+              Hi There very nice to meet you.
+            </div>
+            <button
+              type="button"
+              class="w-full font-medium h-8 bg-indigo-600 text-white rounded-full"
+            >
+              Register
+            </button>
+          </div>
+
+          <div class="flex-col w-1/4 h-full">
+            <div class="h-3/4 my-5" />
+            <button
+              type="button"
+              class="w-full font-medium h-8 bg-cyan-600 text-white rounded-full"
+            >
+              Rulebook
+            </button>
+          </div>
+        </div>
+      </div>
+    ))
+  }
 </BaseLayout>
+
