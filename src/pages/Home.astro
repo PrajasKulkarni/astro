@@ -5,11 +5,9 @@ import home_data from "../content/data/home_data.json";
 
 <style>
   .setup {
-    background-image: url("/public/Aerosol.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
   .content-box {
@@ -18,7 +16,25 @@ import home_data from "../content/data/home_data.json";
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .video{
+    height: 100%;
+    width: 50%;
+    border: 2px solid cyan;
+    border-radius: 50px;
+    outline: none;
   }
 </style>
 
@@ -26,11 +42,18 @@ import home_data from "../content/data/home_data.json";
   {
     home_data.map((data) => (
       <div class="w-screen h-screen setup">
-        <div class="flex border-2 border-black border-solid w-3/4 h-2/3 px-10 pt-5 content-box">
+        <img
+          src={data.BackgroundImg}
+          alt="Events"
+          class="absolute w-full h-full -z-20"
+        />
+        <div class="flex w-3/4 h-2/3 px-10 pt-5 content-box z-20">
           <div class="flex-col w-3/4 h-full mx-5">
-            <div class="text-2xl h-1/4 font-bold">Hello</div>
-            <div class="text-lg font-medium h-1/2 font-normal my-5">
-              Hi There very nice to meet you.
+            <div class="text-5xl h-1/4 font-bold text-purple-800">
+              {data.Event}
+            </div>
+            <div class="text-xl text-purple-800 font-semibold h-1/2 font-normal my-5">
+              {data.EventDesc}
             </div>
             <button
               type="button"
@@ -41,7 +64,9 @@ import home_data from "../content/data/home_data.json";
           </div>
 
           <div class="flex-col w-1/4 h-full">
-            <div class="h-3/4 my-5" />
+            <div class="h-3/4 my-5 scale-105">
+              <img src={data.FrontImg} alt={data.Event} />
+            </div>
             <button
               type="button"
               class="w-full font-medium h-8 bg-cyan-600 text-white rounded-full"
@@ -53,5 +78,18 @@ import home_data from "../content/data/home_data.json";
       </div>
     ))
   }
-</BaseLayout>
 
+  <div class=" flex h-screen gap-x-10 w-full bg-blue-950 py-10 px-20">
+    <div class="flex-col">
+      <div class="text-4xl text-white font-bold h-1/4 w-full text-center">So <b><i>Blithchron</i></b> is Here What Are You Waiting For</div>
+      <div class="text-xl text-white font-semibold h-1/2 w-full mb-10 text-left">Calling all thrill-seekers, artists, and social butterflies! Blithchron is back, bigger and brighter than ever! Dive into a weekend of electrifying dance competitions, witness the next fashion icons strut their stuff, and unleash your inner artist at creative events. It's your chance to fuel your competitive spirit, be wowed by stunning performances, and make memories that will last a lifetime. Don't miss out - join the Blithchron fiesta!</div>
+      <button type="button" class="w-full h-12 font-medium bg-indigo-600 text-white rounded-full"><a href="/Events">Register Yourself</a></button>
+    </div>
+    <video class="video" crossorigin="anonymous" autoplay controls muted loop>
+      <source
+        src="https://raw.githubusercontent.com/1KPLJ/blith-assets/main/blith-thowback.mp4"
+        type="video/mp4"
+      />
+    </video>
+  </div>
+</BaseLayout>
