@@ -12,11 +12,11 @@ const alleventcards: CollectionEntry<'events'>[] = await getCollection('events')
   <main class="flex">
     <SideBar page_tilte = 'EVENTS' page_desc = "Blithchron '24 presents to you these amazing events" />
 
-    <div class="px-10 w-3/4 h-screen ms-60 mt-10 flex-auto flex-col">
+    <div class="px-10 w-3/4 h-screen ms-60 mt-10 flex-auto flex-col justify-center items-center">
 
       <h1 class="font-semibold m-10 p-5 text-4xl" style="text-align: center;">UPCOMING EVENTS</h1>
 
-      <div class="grid grid-cols-2 gap-x-10 gap-y-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 lg:gap-y-20 ">
         {alleventcards.map(events => (
           <Card event_title = {events.data.title} img ={events.data.image} desc = {events.data.description}/>
         ) )}

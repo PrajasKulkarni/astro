@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Sidebar from "../components/sidebar.astro";
+---
+
+<BaseLayout title="Blithchron'24 | Registration">
+  <main class="flex">
+    <Sidebar
+      page_title="Register"
+      page_desc="Register Yourself and be a part of this amazing event"
+    />
+    <div
+      class="flex flex-col px-10 w-3/4 h-screen ms-60 mt-10 justify-center items-center"
+    >
+      <div class="justify-center items-center flex-col border-black border-solid border-2">
+        <div class="my-5">
+          <label for="fname">First Name</label><br>
+          <input
+            type="text"
+            class="comps"
+            placeholder="Enter Your First Name"
+          />
+        </div>
+
+        <div class="input-comps">
+          <label for="Lname">Last Name</label><br>
+          <input type="text" class="comps" placeholder="Enter Your Last Name" />
+        </div>
+
+        <div class="input-comps">
+          <label for="Collegename">Enter Your School/College Name</label><br>
+          <input
+            type="text"
+            class="comps"
+            placeholder="Enter Your First Name"
+          />
+        </div>
+
+        <div class="input-comps">
+          <label for="email">Email</label><br>
+          <input type="email" class="comps" placeholder="Enter Your Email" />
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
